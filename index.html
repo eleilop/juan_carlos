@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenador Personal y Dietista - Presencial y Online</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/funciones.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="#"><img id="favicon" src="./images/trainer.png" alt=""></a>
+                <a href="#">INICIO</a>
+                <a href="#about_me">SOBRE MÍ</a>
+                <a href="#temporadas">SERVICIOS</a>
+                <a href="#galeria">MEDIA</a>
+                <a href="#redes">CONTACTA</a>
+
+                <!-- El último botón es especial, se desactiva su href
+                para que no mande a ningún sitio. A cambio, es manipulado
+                por un JS que hace que se oculte cuando los demás botones estén
+                a la vista y se muestre cuando los botones se oculten. Aparece
+                solo cuando la pantalla sea pequeña.-->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+
+        <section id="hero">
+            <div id="titulo">
+                <br>ENTRENAMIENTO PERSONAL, DIETAS Y SALUD
+            </div>
+            <div id="context">
+                <br><br>Entrenamiento online pesonalizado<br>
+                <br>Servicios de entrenamiento personal presencial<br>
+                <br>Servicios de nutrición<br>
+                <br><a href="#temporadas" class="btn">Leer más</a>
+            </div>
+        </section>
+
+        <section id="about_me">
+            <div class="titulo-seccion1">
+                Sobre mí
+            </div>
+            <div class="grid2">
+                <div class="col2">
+                    <img src="./images/trainer.jpg" alt="">
+                </div>
+                <div class="col2">
+                    <p>Me llamo Juan Carlos Rebollo López, tengo 33 años, estoy titulado en especialista en preparación al culturismo por VB Quality Academy y preparándome para ser futuro atleta de Classic Physique.</p>
+            </div>
+        </section>
+
+        <section id="temporadas">
+            <div class="titulo-seccion2">
+                Tarifas
+            </div>
+            
+            <div class="grid5">
+                <!-- PRIMERA TARIFA -->
+                <div class="col5">
+                    <div class="card">
+                        <img src="./images/mensual.jpg" alt="Tarifa mensual">
+                        <p><a class="boton" href="https://www.instagram.com/juancar.r.l/" target="_blank">Contactar</a></p>
+                    </div>
+                </div>
+
+                <!-- SEGUNDA TARIFA -->
+                <div class="col5">
+                    <div class="card">
+                        <img src="./images/trimestral.jpg" alt="Tarifa trimestral">
+                        <p><a class="boton" href="https://www.instagram.com/juancar.r.l/" target="_blank">Contactar</a></p>
+                    </div>
+                </div>
+
+                <!-- TERCERA TARIFA -->
+                <div class="col5">
+                    <div class="card">
+                        <img src="./images/semestral.jpg" alt="Tarifa semestral">
+                        <p><a class="boton" href="https://www.instagram.com/juancar.r.l/" target="_blank">Contactar</a></p>
+                    </div>
+                </div>
+
+                <!-- CUARTA TARIFA -->
+                <div class="col5">
+                    <div class="card">
+                        <img src="./images/anual.jpg" alt="Tarifa anual">
+                        <p><a class="boton" href="https://www.instagram.com/juancar.r.l/" target="_blank">Contactar</a></p>
+                    </div>
+                </div>
+                <!-- QUINTA TARIFA -->
+                <div class="col5">
+                    <div class="card">
+                        <img src="./images/entrenamiento.jpg" alt="Entrenamiento presencial">
+                        <p><a class="boton" href="https://www.instagram.com/juancar.r.l/" target="_blank">Contactar</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <div class="titulo-seccion1">
+                Media
+            </div>
+            <div class="grid22">
+                <div class="col22">
+                    <img src="./images/example2.png" alt="">
+                </div>
+                <div class="col22">
+                    <img src="./images/example4.png" alt="">
+                </div>
+                <div class="col22">
+                    <img src="./images/example3.png" alt="">
+                </div>
+                <div class="col22">
+                    <img src="./images/example1.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <footer id="redes">
+            <div class="grid3">
+                <div class="col3">
+                    <a href="#"><img src="./images/favicon.png" alt="Ken Kaneki"></a>
+                </div>
+                <div class="col3" id="indice">
+                    <p><a class="enlace" href="#">INICIO</a></p>
+                    <p><a class="enlace" href="#sinopsis">SOBRE MÍ</a></p>
+                    <p><a class="enlace" href="#temporadas">SERVICIOS</a></p>
+                    <p><a class="enlace" href="#galeria">MEDIA</a></p>
+                </div>
+                <div class="col3">
+                    <p id="follow">Sígueme y contáctame en:</p>
+                    <a href="https://www.instagram.com/juancar.r.l/" class="fa fa-instagram" target="_blank"></a>
+                    <a href="https://es-es.facebook.com/juacarlos.rebollolopez" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://www.youtube.com/@juancar.r.l249/featured" class="fa fa-youtube" target="_blank"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
