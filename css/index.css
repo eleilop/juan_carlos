@@ -47,6 +47,7 @@ nav {position: sticky;
 .topnav {background-color: rgb(0, 195, 255);
          overflow: hidden;
          align-items: center;
+         display: flex;
 }
 
 .topnav a {float: left;
@@ -72,7 +73,7 @@ nav {position: sticky;
 
 #trainer {color: rgb(0, 195, 255);}
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1050px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -80,7 +81,7 @@ nav {position: sticky;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1050px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -211,8 +212,8 @@ nav {position: sticky;
 #galeria {background-color: white;}
 
 .grid22 {display: grid;
-         grid-template-columns: 50% 50%;
-         padding-left: 9%;
+         grid-template-columns: 25% 25% 25% 25%;
+         text-align: center;
 }
 
 .col22 img {width: 80%;
@@ -224,7 +225,9 @@ nav {position: sticky;
 footer {background-color: rgb(140, 219, 250);}
 
 .grid3 {display: grid;
-    grid-template-columns: 25% 25% 50%;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+    text-align: center;
 }
 
 .col3 {padding: 6%;}
@@ -288,8 +291,20 @@ footer {background-color: rgb(140, 219, 250);}
 /**************************** MEDIA QUERIES ****************************/
 
 @media only screen and (width<=1050px){
+    #hero {background-image: url(../images/hero2.jpg);}
+    .topnav {display: block;}
+    #titulo {font-size: 3rem;}
+    .grid2 {grid-template-columns: 100%;}
+    .grid2 img {width: 100%;}
+    .grid5 {grid-template-columns: 50% 50%;}
+    .grid22 {grid-template-columns: 50% 50%;}
+    .grid3 {grid-template-columns: 50% 50%;}
 }
 
 @media only screen and (width<=600px){
-
+    #titulo {font-size: 2rem;}
+    #context {font-size: 1.5rem;}
+    .grid5 {grid-template-columns: 100%;}
+    .grid22 {grid-template-columns: 100%;}
+    .grid3 {grid-template-columns: 100%;}
 }
