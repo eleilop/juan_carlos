@@ -288,25 +288,8 @@ footer {background-color: rgb(140, 219, 250);}
 /**************************** MEDIA QUERIES ****************************/
 
 @media only screen and (width<=1050px){
-    #wrapper {width: 90%;}
-    #titulo {font-size: 0rem;}
-    .grid10 {grid-template-columns: 50% 50%;}
-    #hero {background-image: url(../images/Tokyo_Ghoul2.jpeg);}
-    .grid3 {grid-template-columns: 50% 50%;}
-    .grid4 {grid-template-columns: 100%;}
-    .grid6 {grid-template-columns: 100%;}
 }
 
 @media only screen and (width<=600px){
-    #wrapper {width: 100%;}
-    #titulo {font-size: 6rem;
-             text-align: center;
-             color: rgb(39, 39, 39);}
-    .grid10 {grid-template-columns: 100%;}
-    #hero {background-image: url(../images/Tokyo_Ghoul3.jpg)}
-    .grid3 {grid-template-columns: 100%;}
-    .grid4 {grid-template-columns: 100%;}
-    .col4 p {font-size: 1.5rem;}
-    .grid6 {grid-template-columns: 100%;}
-    .col6 p {font-size: 1rem;}
+
 }
