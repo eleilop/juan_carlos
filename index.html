@@ -13,13 +13,15 @@
 </head>
 <body>
     <div id="wrapper">
+        <!-- #################### BARRA DE NAVEGACIÓN #################### -->
         <nav>
             <div class="topnav" id="myTopnav">
-                <a href="#"><img id="favicon" src="./images/banner.png" alt=""></a>
+                <a href="#"><img id="banner" src="./images/banner.jpg" alt=""></a>
                 <a href="#">INICIO</a>
                 <a href="#about_me">SOBRE MÍ</a>
-                <a href="#temporadas">TARIFAS</a>
-                <a href="#galeria">MEDIA</a>
+                <a href="#tarifas">TARIFAS</a>
+                <a href="#clientes">CLIENTES</a>
+                <a href="#media">MEDIA</a>
                 <a href="#redes">CONTACTA</a>
 
                 <!-- El último botón es especial, se desactiva su href
@@ -33,6 +35,7 @@
             </div>
         </nav>
 
+        <!-- #################### HERO SECTION #################### -->
         <section id="hero">
             <div id="titulo">
                 <br>ENTRENAMIENTO PERSONAL, DIETAS Y SALUD
@@ -43,134 +46,183 @@
                 <br>Planes de nutrición con tus gustos<br>
                 <br>Reporte presencial/videollamada mensual<br>
                 <br>Resolución de dudas diaria<br>
-                <br><a href="#temporadas" class="btn">Leer más</a>
+                <br><a href="#tarifas" class="btn">Leer más</a>
             </div>
         </section>
 
+        <!-- #################### ABOUT ME #################### -->
         <section id="about_me">
             <div class="titulo-seccion1">
                 Sobre mí
             </div>
-            <div class="grid2">
-                <div class="col2">
+            <div class="grid-about_me">
+                <div class="col-about_me">
                     <img src="./images/trainer.jpg" alt="">
                 </div>
-                <div class="col2">
+                <div class="col-about_me">
                     <p>Me llamo Juan Carlos Rebollo López, tengo 33 años, estoy titulado en especialista en preparación al culturismo por VB Quality Academy y preparándome para ser futuro atleta de Classic Physique.</p>
             </div>
         </section>
 
-        <section id="temporadas">
+        <!-- #################### TARIFAS #################### -->
+        <section id="tarifas">
             <div class="titulo-seccion2">
                 Tarifas
             </div>
             
-            <div class="grid5">
+            <div class="grid-tarifas">
                 <!-- PRIMERA TARIFA -->
-                <div class="col5">
+                <div class="col-tarifas">
                     <div class="card">
                         <img src="./images/mensual.jpg" alt="Tarifa mensual">
-                        <p><a class="boton" href="https://www.instagram.com/juancar.r.l/" target="_blank">Contactar</a></p>
+                        <p><a class="btn2" href="https://www.instagram.com/juancar.r.l/" target="_blank">Contactar</a></p>
                     </div>
                 </div>
 
                 <!-- SEGUNDA TARIFA -->
-                <div class="col5">
+                <div class="col-tarifas">
                     <div class="card">
                         <img src="./images/trimestral.jpg" alt="Tarifa trimestral">
-                        <p><a class="boton" href="https://www.instagram.com/juancar.r.l/" target="_blank">Contactar</a></p>
+                        <p><a class="btn2" href="https://www.instagram.com/juancar.r.l/" target="_blank">Contactar</a></p>
                     </div>
                 </div>
 
                 <!-- TERCERA TARIFA -->
-                <div class="col5">
+                <div class="col-tarifas">
                     <div class="card">
                         <img src="./images/semestral.jpg" alt="Tarifa semestral">
-                        <p><a class="boton" href="https://www.instagram.com/juancar.r.l/" target="_blank">Contactar</a></p>
+                        <p><a class="btn2" href="https://www.instagram.com/juancar.r.l/" target="_blank">Contactar</a></p>
                     </div>
                 </div>
 
                 <!-- CUARTA TARIFA -->
-                <div class="col5">
+                <div class="col-tarifas">
                     <div class="card">
                         <img src="./images/anual.jpg" alt="Tarifa anual">
-                        <p><a class="boton" href="https://www.instagram.com/juancar.r.l/" target="_blank">Contactar</a></p>
+                        <p><a class="btn2" href="https://www.instagram.com/juancar.r.l/" target="_blank">Contactar</a></p>
                     </div>
                 </div>
                 <!-- QUINTA TARIFA -->
-                <div class="col5">
+                <div class="col-tarifas">
                     <div class="card" id="entrenamiento">
                         <img src="./images/entrenamiento.jpg" alt="Entrenamiento presencial">
-                        <p><a class="boton" href="https://www.instagram.com/juancar.r.l/" target="_blank">Contactar</a></p>
+                        <p><a class="btn2" href="https://www.instagram.com/juancar.r.l/" target="_blank">Contactar</a></p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- #################### CLIENTES #################### -->
         <section id="clientes">
             <div class="titulo-seccion2">
                 Clientes
             </div>
-            <!-- Slideshow container -->
-            <div class="slideshow-container">
+            <div class="grid-clientes">
+                <div class="img-comp-container col-clientes espacio1 espacio2">
+                    <div class="img-comp-img">
+                    <img src="./images/cliente1.jpg" width="300" height="400">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                    <img src="./images/cliente2.jpg" width="300" height="400">
+                    </div>
+                </div>
 
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                    <img src="./images/example2.png" style="width:100%">
-                    <div class="text">Cliente1 (Antes)</div>
+                <div class="img-comp-container col-clientes espacio1 espacio2">
+                    <div class="img-comp-img">
+                    <img src="./images/cliente3.jpg" width="300" height="400">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                    <img src="./images/cliente4.jpg" width="300" height="400">
+                    </div>
                 </div>
-            
-                <div class="mySlides fade">
-                    <img src="./images/example5.jpg" style="width:100%">
-                    <div class="text">Cliente1 (Después)</div>
+
+                <div class="img-comp-container col-clientes espacio1 espacio2">
+                    <div class="img-comp-img">
+                    <img src="./images/cliente5.jpg" width="300" height="400">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                    <img src="./images/cliente6.jpg" width="300" height="400">
+                    </div>
                 </div>
-            
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
-    
-            <!-- The dots/circles -->
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
+                
+                <div class="img-comp-container col-clientes espacio2">
+                    <div class="img-comp-img">
+                    <img src="./images/cliente7.jpg" width="300" height="400">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                    <img src="./images/cliente8.jpg" width="300" height="400">
+                    </div>
+                </div>
+
+                <div class="img-comp-container col-clientes espacio2">
+                    <div class="img-comp-img">
+                    <img src="./images/cliente9.jpg" width="300" height="400">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                    <img src="./images/cliente10.jpg" width="300" height="400">
+                    </div>
+                </div>
+
+                <script>
+                    initComparisons();
+                </script>
             </div>
         </section>
 
-        <section id="galeria">
+        <!-- #################### MEDIA #################### -->
+        <section id="media">
             <div class="titulo-seccion1">
                 Media
             </div>
-            <div class="grid22">
-                <div class="col22">
-                    <img src="./images/example2.png" alt="">
-                </div>
-                <div class="col22">
-                    <img src="./images/example5.jpg" alt="">
-                </div>
-                <div class="col22">
-                    <img src="./images/example4.png" alt="">
-                </div>
-                <div class="col22">
-                    <img src="./images/example6.jpg" alt="">
-                </div>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="./images/example2.png" style="width:100%">
             </div>
+        
+            <div class="mySlides fade">
+                <img src="./images/example5.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="./images/example4.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./images/example6.jpg" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
         </section>
 
+        <!-- #################### FOOTER #################### -->
         <footer id="redes">
-            <div class="grid3">
-                <div class="col3">
+            <div class="grid-redes">
+                <div class="col-redes">
                     <a href="#"><img src="./images/favicon.png" alt="Ken Kaneki"></a>
                 </div>
-                <div class="col3" id="indice">
+                <div class="col-redes" id="indice">
                     <p><a class="enlace" href="#">INICIO</a></p>
                     <p><a class="enlace" href="#about_me">SOBRE MÍ</a></p>
-                    <p><a class="enlace" href="#temporadas">TARIFAS</a></p>
-                    <p><a class="enlace" href="#galeria">MEDIA</a></p>
+                    <p><a class="enlace" href="#tarifas">TARIFAS</a></p>
+                    <p><a class="enlace" href="#clientes">CLIENTES</a></p>
+                    <p><a class="enlace" href="#media">MEDIA</a></p>
                 </div>
-                <div class="col3" id="alone">
-                    <p id="follow">Sígueme y contáctame en:</p>
+                <div class="col-redes" id="follow">
+                    <p>Sígueme y contáctame en:</p>
                     <a href="https://www.instagram.com/juancar.r.l/" class="fa fa-instagram" target="_blank"></a>
                     <a href="https://es-es.facebook.com/juacarlos.rebollolopez" class="fa fa-facebook" target="_blank"></a>
                     <a href="https://www.youtube.com/@juancar.r.l249/featured" class="fa fa-youtube" target="_blank"></a>
