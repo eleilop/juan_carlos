@@ -443,7 +443,7 @@ footer {background-color: rgb(140, 219, 250);}
     .grid-tarifas {grid-template-columns: 100%;}
     .grid-clientes {
         grid-template-columns: 100%;
-        padding-left: 5%;
+        padding-left: 15%;
     }
     .espacio2 {padding-bottom: 160%;}
     .grid-media {grid-template-columns: 100%;}
