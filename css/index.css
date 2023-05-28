@@ -443,9 +443,9 @@ footer {background-color: rgb(140, 219, 250);}
     .grid-tarifas {grid-template-columns: 100%;}
     .grid-clientes {
         grid-template-columns: 100%;
-        padding-left: 3%;
+        padding-left: 4%;
     }
-    .espacio2 {padding-bottom: 200%;}
+    .espacio2 {padding-bottom: 180%;}
     .grid-media {grid-template-columns: 100%;}
     .grid-redes {grid-template-columns: 100%;}
 }
