@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Entrenador Personal y Dietista</title>
+    <link rel="stylesheet" href="./css/formulario.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/funciones.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="./index.html#"><img id="banner" src="./images/banner.jpg" alt="Banner"></a>
+            <a href="./index.html#">INICIO</a>
+            <a href="./index.html#about_me">SOBRE MÍ</a>
+            <a href="./index.html#tarifas">TARIFAS</a>
+            <a href="./index.html#clientes">CLIENTES</a>
+            <a href="./index.html#media">MEDIA</a>
+            <a href="./index.html#redes">CONTACTA</a>
+
+            <!-- El último botón es especial, se desactiva su href
+            para que no mande a ningún sitio. A cambio, es manipulado
+            por un JS que hace que se oculte cuando los demás botones estén
+            a la vista y se muestre cuando los botones se oculten. Aparece
+            solo cuando la pantalla sea pequeña.-->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+    
+    <div class="titulo-seccion1">Formulario</div>
+    
+    <div class="container">
+      <form action="https://formsubmit.co/cddd763b283aec338416e4ccea4fe07c" method="POST" enctype="multipart/form-data">
+      <!-- NOMBRE COMPLETO -->
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Nombre completo</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="nombre" placeholder="NOMBRE COMPLETO" required>
+        </div>
+      </div>
+
+      <!-- EDAD -->
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Edad</label>
+        </div>
+        <div class="col-75">
+          <input type="number" id="lname" name="edad" placeholder="EDAD" required>
+        </div>
+      </div>
+
+      <!-- ALTURA -->
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Altura</label>
+        </div>
+        <div class="col-75">
+          <input type="number" id="fname" name="altura" placeholder="ALTURA (cm)" required>
+        </div>
+      </div>
+
+      <!-- PESO -->
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Peso</label>
+        </div>
+        <div class="col-75">
+          <input type="number" id="fname" name="peso" placeholder="Peso (kg)" required>
+        </div>
+      </div>
+
+      <!-- SEXO -->
+      <div class="row">
+        <div class="col-25">
+          <label for="gender">Sexo</label>
+        </div>
+        <div class="col-75">
+          <select id="gender" name="sexo" required>
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- EJERCICIOS CARDIOVASCULARES -->
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">¿Con qué frecuencia realiza ejercicios cardiovasculares?</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="realiza_ejercicios_cardiovasculares" placeholder="Escribe tu respuesta" required>
+        </div>
+      </div>
+
+      <!-- ALIMENTOS QUE NO TE GUSTAN -->
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">¿Hay algún alimento que no te guste?</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="gustos_alimenticios" placeholder="Ejemplo: Sí, brocoli y zanahorias / No" required>
+        </div>
+      </div>
+
+      <!-- ALERGIAS ALIMENTICIAS -->
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">¿Tienes alergias alimenticias?</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="alergias_alimenticias" placeholder="Ejemplo: Sí, huevo y pescado / No" required>
+        </div>
+      </div>
+      
+      <!-- LESIONES -->
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">¿Tienes alguna lesión o padeces de algo?</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="lesiones" placeholder="Ejemplo: Sí, distensión del músculo de la pantorrilla / No" required>
+        </div>
+      </div>
+
+      <!-- EXCITANTES -->
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">¿Tienes intolerancia a algún alimento excitante?</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="alimentos_excitantes" placeholder="Ejemplo: Sí, cafeína y teína / No" required>
+        </div>
+      </div>
+
+      <!-- SUPLEMENTACION DEPORTIVA -->
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">¿Usas suplementación deportiva? ¿Cuáles?</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="suplementos" placeholder="Ejemplo: Sí, pre-entrenos y creatina / No" required>
+        </div>
+      </div>
+
+      <!-- OBJETIVO -->
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">¿Cuál es tu objetivo?</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="objetivo" placeholder="Escribe tu respuesta" required>
+        </div>
+      </div>
+
+      <!-- ENTRENAMIENTO DE PESAS -->
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">¿Tienes disponibilidad horaria para entrenamiento de pesas? ¿Cuántos días? ¿Cuánto tiempo?</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="disponibilidad_entrenamiento_pesas" placeholder="Escribe tu respuesta" required>
+        </div>
+      </div>
+
+      <!-- EJERCICIO CARDIOVASCULAR -->
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">¿Tienes disponibilidad horaria para ejercicio cardiovascular? ¿Cuántos días? ¿Cuánto tiempo?</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="disponibilidad_ejercicio_cardiovascular" placeholder="Escribe tu respuesta" required>
+        </div>
+      </div>
+
+      <!-- RUTINA DIARIA -->
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">¿Cuál es tu rutina diaria?</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="rutina_diaria" placeholder="Escribe tu mensaje" style="height:200px" required></textarea>
+        </div>
+      </div>
+
+      <!-- ECONOMIA -->
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">¿Cuál es tu posicionamiento económico? ¿Cuánto quieres o puedes gastar?</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="economia" placeholder="Escribe tu respuesta" required>
+        </div>
+      </div>
+
+      <!-- FOTO FRONTAL -->
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Adjunta una foto tuya de frente (Solo se admite jpg/png)</label>
+        </div>
+        <div class="col-75">
+          <input type="file" id="fname" name="foto_frontal" accept="image/jpeg, image/png" required>
+        </div>
+      </div>
+
+      <!-- FOTO LATERAL -->
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Adjunta una foto tuya de lado (Solo se admite jpg/png)</label>
+        </div>
+        <div class="col-75">
+          <input type="file" id="fname" name="foto_lateral" accept="image/jpeg, image/png" required>
+        </div>
+      </div>
+
+      <!-- FOTO ESPALDA -->
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Adjunta una foto tuya de espalda (Solo se admite jpg/png)</label>
+        </div>
+        <div class="col-75">
+          <input type="file" id="fname" name="foto_espalda" accept="image/jpeg, image/png" required>
+        </div>
+      </div>
+
+      <!-- ENVIAR -->
+      <br>
+      <div class="row">
+        <input type="submit" value="Enviar">
+      </div>
+      </form>
+    </div>
+
+</body>
+</html>
