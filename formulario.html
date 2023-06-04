@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Entrenador Personal y Dietista</title>
+    <link rel="stylesheet" href="./css/formulario.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/funciones.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="./index.html#"><img id="banner" src="./images/banner.jpg" alt="Banner"></a>
+            <a href="./index.html#">INICIO</a>
+            <a href="./index.html#about_me">SOBRE MÍ</a>
+            <a href="./index.html#tarifas">TARIFAS</a>
+            <a href="./index.html#clientes">CLIENTES</a>
+            <a href="./index.html#media">MEDIA</a>
+            <a href="./index.html#redes">CONTACTA</a>
+
+            <!-- El último botón es especial, se desactiva su href
+            para que no mande a ningún sitio. A cambio, es manipulado
+            por un JS que hace que se oculte cuando los demás botones estén
+            a la vista y se muestre cuando los botones se oculten. Aparece
+            solo cuando la pantalla sea pequeña.-->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+    <h2>Responsive Form</h2>
+    <p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.</p>
+    
+    <div class="container">
+      <form action="https://formsubmit.co/eloyleivalopez48@gmail.com" method="POST">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Nombre</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="name" placeholder="NOMBRE COMPLETO">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Apellidos</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="email" placeholder="EMAIL">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">País</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Mensaje</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Escribe tu mensaje" style="height:200px"></textarea>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+      </form>
+    </div>
+
+</body>
+</html>
