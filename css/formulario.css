@@ -57,6 +57,7 @@ nav {position: sticky;
 .topnav .icon {
    display: none;
    padding: 15px;
+   font-size: 50px;
 }
 
 #banner {height: 60px;}
