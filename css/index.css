@@ -11,8 +11,10 @@
 
 html {scroll-behavior: smooth;}
 
-body {margin: 0; padding: 0;
-      background-color: black;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
 }
 
 section {padding: 5% 0;}
@@ -33,9 +35,10 @@ section {padding: 5% 0;}
 
 /****************************** BARRA DE NAVEGACIÓN ******************************/
 
-nav {position: sticky;
-     top: 0;
-     z-index: 999;
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .topnav {
@@ -70,52 +73,56 @@ nav {position: sticky;
 #trainer {color: rgb(0, 195, 255);}
 
 @media screen and (max-width: 1050px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-      float: right;
-      display: block;
-  }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
 }
 
 @media screen and (max-width: 1050px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-  }
-  .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-  }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
 
 /****************************** HERO SECTION ******************************/
 
-#hero {background-image: url(../images/hero.jpg);
-       height: 100vh;
-       background-repeat: no-repeat;
-       background-size: cover;
-       padding-left: 3%;
+#hero {
+    background-image: url(../images/hero.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 3%;
 }
 
-#titulo {font-size: 4rem;
-         color: rgb(0, 195, 255);
-         text-align: center;
+#titulo {
+    font-size: 4rem;
+    color: rgb(0, 195, 255);
+    text-align: center;
 }
 
-#context {font-size: 2rem;
-          color: rgb(255, 255, 255);
-          text-align: center;
+#context {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
 
-.btn {display: inline-block;
-      padding: 10px 20px;
-      background-color: rgb(0, 195, 255);
-      color: white;
-      text-decoration: none;
-      border-radius: 20px;
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(0, 195, 255);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
 }
 
 .btn:hover {
@@ -142,7 +149,7 @@ nav {position: sticky;
     font-size: 1.5rem;
 }
 
-.col-about_me img {width: 75%;}
+.col-about_me img {width: 60%;}
 
 .col-about_me p {
     position: relative;
@@ -161,11 +168,11 @@ nav {position: sticky;
 .col-tarifas {padding: 8%;}
 
 .card {
-  /* Añadir sombras para crear el "efecto card" */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  padding: 5%;
-  border-radius: 8%;
+    /* Añadir sombras para crear el "efecto card" */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 5%;
+    border-radius: 8%;
 }
 
 /* Con el ratón encima, añade una sombra más amplia */
@@ -180,19 +187,20 @@ nav {position: sticky;
 
 .card img:hover {opacity: 1;}
 
-.btn2 {text-decoration: none;
-       font-size: 2rem;
-       color: white;
-       background-color: rgb(0, 195, 255);
-       border-radius: 30px;
-       transition: 0.3s;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       padding-top: 10px;
-       padding-bottom: 10px;
-       margin-left: 10%;
-       margin-right: 10%;
+.btn2 {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(0, 195, 255);
+    border-radius: 30px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .btn2:hover {
@@ -224,13 +232,13 @@ nav {position: sticky;
     height: auto;
     overflow: hidden;
 }
-  
+
 .img-comp-img img {
     display: block;
     vertical-align: middle;
 }
-  
-  .img-comp-slider {
+
+.img-comp-slider {
     position: absolute;
     z-index: 9;
     cursor: ew-resize;
@@ -242,7 +250,7 @@ nav {position: sticky;
     width: 10px;
     height: 15%;
     border-radius: 25%;
-  }
+}
 
 /**************************** MEDIA ****************************/
 
@@ -288,8 +296,8 @@ nav {position: sticky;
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -297,38 +305,38 @@ nav {position: sticky;
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {background-color: #717171;}
 
 /* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 /**************************** FOOTER ****************************/
@@ -353,14 +361,15 @@ footer {background-color: rgb(140, 219, 250);}
 #indice {text-align: center;}
 
 /* Style all font awesome icons */
-.fa {box-sizing: content-box;
-     padding: 15px;
-     font-size: 30px !important;
-     width: 30px;
-     height: 30px;
-     text-align: center;
-     text-decoration: none;
-     border-radius: 50%;
+.fa {
+    box-sizing: content-box;
+    padding: 15px;
+    font-size: 30px !important;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
 }
 
 /* Add a hover effect if you want */
