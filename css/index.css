@@ -208,6 +208,17 @@ nav {
     background-color: white;
 }
 
+/****************************** CAMISETAS ******************************/
+
+#camisetas {background-color: rgb(140, 219, 250);}
+
+.grid-camisetas {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.col-camisetas {padding: 8%;}
+
 /**************************** CLIENTES ****************************/
 
 #clientes {background-color: rgb(140, 219, 250);}
@@ -423,6 +434,7 @@ footer {background-color: rgb(140, 219, 250);}
     .col-about_me p {padding-bottom: 40%;}
     .grid-about_me img {width: 100%;}
     .grid-tarifas {grid-template-columns: 50% 50%;}
+    .grid-camisetas {grid-template-columns: 50% 50%;}
     .grid-clientes {
         grid-template-columns: 50% 50%;
         padding-left: 8.5%;
@@ -436,6 +448,7 @@ footer {background-color: rgb(140, 219, 250);}
     #titulo {font-size: 2rem;}
     #context {font-size: 1.5rem;}
     .grid-tarifas {grid-template-columns: 100%;}
+    .grid-camisetas {grid-template-columns: 100%;}
     .grid-clientes {
         grid-template-columns: 100%;
         padding-left: 12%;
