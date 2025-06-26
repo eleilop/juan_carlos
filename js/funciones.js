@@ -10,35 +10,6 @@ function myFunction() {
     }
   }
 
-  let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
 function initComparisons() {
   var x, i;
   /* Find all elements with an "overlay" class: */
@@ -115,32 +86,3 @@ function initComparisons() {
     }
   }
 }
-
-const camisetas = [
-    [
-        './images/one_piece1.jpg',
-        './images/one_piece2.jpg'
-    ],
-    [
-        './images/dragon_ball1.jpg',
-        './images/dragon_ball2.jpg'
-    ],
-    [
-        './images/solo_leveling1.jpg',
-        './images/solo_leveling2.jpg'
-    ]
-];
-
-// Selecciona todas las imágenes de las cards de camiseta
-const imgElements = document.querySelectorAll('.grid-camisetas .card img');
-
-// Llevamos el índice de la imagen actual por cada camiseta
-let indices = [0, 0, 0];
-
-setInterval(() => {
-    imgElements.forEach((img, i) => {
-        // Cambia al siguiente índice, vuelve a 0 si llega al final
-        indices[i] = (indices[i] + 1) % camisetas[i].length;
-        img.src = camisetas[i][indices[i]];
-    });
-}, 3000); // 3 segundos
